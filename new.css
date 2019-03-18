@@ -1,0 +1,528 @@
+/*
+
+@font-face {
+  font-family: Ak;
+  src: url('../fonts/AkzidenzGrotesk-Regular.otf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: Geo-bi;
+  src: url('../fonts/Geog-BdIt.otf');
+  font-weight: bolditalic;
+}
+
+@font-face {
+  font-family: Geo-medium;
+  src: url('../fonts/Geogtq-Md.otf');
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: Geo-bold;
+  src: url('../fonts/Geogtq-Bd.otf');
+  font-weight: bold;
+}*/
+
+
+
+background: #6C7A89;
+
+
+body {
+}
+
+p {
+  margin: 0;
+}
+
+#title {
+  position: relative;
+  display: inline-block;
+  transition: all .2s ease;
+  text-align: left;
+  margin-left: 40px;
+  line-height: 100%;
+  width: 45%;
+  -webkit-font-smoothing: antialiased;
+  transform: perspective(1px) scale(1.1);
+}
+
+#subtitle {
+  position: absolute;
+  display: inline-block;
+  margin-top: 10px;
+  width: 25%;
+  transform: perspective(1px) scale(1.1); 
+  left: 30px; 
+}
+
+
+
+.H1 {
+  font-family: 'Nunito';
+  font-size: 50px;
+  font-weight: 800;
+  color: #222B2E;
+  line-height: 75px;
+}
+
+.H2 {
+  font-family: 'Nunito';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.H3 {
+  font-family: 'Nunito';
+  font-size: 30px;
+  line-height: 45px;
+
+}
+
+.H4 {
+  font-family: 'Nunito';
+  font-size: 24px;  
+  line-height: 36px;  
+}
+
+.H5 {
+  font-family: 'Karla';
+  font-size: 20px;
+  color: #222B2E;
+  line-height: 30px;
+
+}
+
+.H6 {
+  font-family: 'Karla';
+  font-size: 16px;
+  color: #222B2E;
+  line-height: 24px;
+
+}
+
+
+.centertext {
+  text-align: center;
+}
+
+
+
+
+#headercolumn.smaller > .headercontainer > #banner > #title{
+  font-size: 36px;
+  /*font-weight: 900;*/
+  transition: all .2s ease;
+  line-height: 100%;
+  margin-left: 30px;
+  transform: perspective(1px) scale(1.1);
+}
+
+#headercolumn.smaller > .headercontainer > #banner > #subtitle{
+  display: none;
+}
+
+
+.topblocker {
+  height: 250px;
+}
+
+#headercolumn {
+  position: fixed;
+  text-align: center;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /*Odd width to compensate for content padding*/
+  width: 948px;
+  height: 190px;
+  margin-bottom: 50px;
+  background-color: inherit;  
+  transition: all .2s ease;
+  /*will-change: height;*/
+  perspective: 700px;
+
+}
+
+
+#headerpad {
+  position: relative;
+  background-color: #222B2E;  
+  transition: all .2s ease;
+  width: 120%;
+
+  height: 15px;
+  top: 5px;
+}
+
+
+#headercolumn.smaller {
+  height: 100px;
+  transition: all .2s ease;
+}
+
+
+#banner {
+  position: relative;
+  width: 1200px;
+  background-color: #F7CA18;
+  transform: rotate(-2deg);
+  left: -50px;
+  top: 10px;
+  padding-left: 0px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+#headercolumn.smaller > .headercontainer > #banner {
+  display: inline-block;
+  transform: rotate(-0deg);
+  left: -30px;
+  width: 1008px;
+  font-size: 24pt;
+  /*transition: all .2s ease;*/
+  padding: 20px;
+  top: 0px;
+  /*box-shadow: 0 8px 0 0px #F2EDCF;*/
+}
+
+/*Css visibility is visually binary; opacity is added to feint effect */
+.headercontainer {
+  display: inline-block;
+  margin: auto; 
+  text-align: left;
+  width: 470px;
+  padding-top: 10px;
+  z-index: 999;
+  transition: all .2s ease;
+}
+
+#headercolumn.smaller > .headercontainer {
+  text-align: left;
+  transition: all .2s ease;
+  clip-path: none;
+  transform: none;
+    padding-top: 0;
+
+}
+
+#bannerbox {
+  transform: rotateY(20deg);
+}
+
+#bannershadow {
+  position: absolute;
+  height: 120%;
+  left: -400px;
+  width: 700%;
+  top: 10px;
+  margin: 0 auto;
+  background-color: #F7CA18;
+  transform: rotate(-2deg);
+
+}
+
+
+
+
+#headercolumn.smaller > .headercontainer > #bannershadow {
+  transform: none;
+  width: 948px;
+  left: 0px;
+  height: 30px;
+  top: 120px;
+  background-color: rgba(242, 237, 207, 0);
+  box-shadow: none;
+}
+
+
+
+
+
+#headercolumn.smaller > .headercontainer > #banner > #headerpad{
+  /*display: none;*/
+    width: 100%;
+
+}
+
+#navmain {
+  position: relative;
+  display: inline-block;
+  width: 150%;
+  transition: all .2s ease;
+  text-align: right;
+  top: 95px;
+  right: 50%;
+}
+
+
+
+#headercolumn.smaller > .headercontainer > #navmain {
+  top: -4px;
+
+}
+
+
+
+.navmainbutton {
+  background-color: rgba(0,0,0,0);
+  color: green;
+  border: none;
+  width: 180px;
+  height: 80px;
+  cursor: pointer;
+
+}
+
+
+.contentcolumn {
+  display: block;
+  margin: auto;
+  width: 960px;
+
+
+}
+
+/*Css visibility is visually binary; opacity is added to feint effect */
+.flexcontainer {
+  position: relative;
+/*  -webkit-transition: visibility 0s linear .4s, opacity .4s linear;
+  -moz-transition: visibility 0s linear .4s, opacity .4s linear;
+  -o-transition: visibility 0s linear .4s, opacity .4s linear;*/
+  transition: visibility 0s ease-out .3s, opacity .4s ease-out;
+  margin: auto; 
+  padding-left: 6px; 
+  width: 960px;
+}
+
+#flexgridA {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  visibility: visible;
+  opacity: 1;
+  /*background-color: #ffffff;*/
+
+}
+
+#flexgridB {
+  display: flex;
+  visibility: hidden;
+  opacity: 1;
+  background-color: #6e6e6e;
+}
+
+.flexcontainer > div
+/*, .flexcontainer > div > div */{
+  margin-right: 8px;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+
+
+.fullwidth {
+  width: calc(100% - 8px);
+ }
+
+.halfwidth {
+  width: calc(50% - 8px); 
+}
+
+.thirdwidth {
+  width: calc(33.33333% - 8px); 
+}
+
+.tallheight {
+  height: 800px;
+  transition: .3s;  
+}
+
+.midheight {
+  height: 400px;
+  transition: .3s;
+}
+
+.shortheight {
+  height: 200px; 
+  transition: .3s;  
+}
+
+.contentbox {
+  background-color: #E9E6EC; 
+  opacity: .9;
+  /*border-left-style: dotted ;*/
+  border-width: 1px;
+  border-color: #222B2E;
+  box-shadow: 0px 2px 8px 0px #E5EAFD;
+  color: #222B2E;
+  /*color: #695749;*/
+}
+
+
+.chartbarback {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: calc(50% - 6px);
+  vertical-align: middle;
+  transition: .5s;
+  padding: auto 8px;
+  text-align: center;
+}
+
+
+
+.chartbardesc, .chartbardescinv {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  left: 0;
+  top: 60%;
+  transition-duration: .8s;
+  transition-delay: .6s;
+}
+
+.chartbardescinv {
+  color: #E9E6EC;
+  z-index: 999;
+  top: 50%;
+}
+
+.chartbarhollow, .chartbarsolid {
+  position: absolute;
+  display: inline-block;  
+  width: 90%;
+  margin: 5%;
+  border-style: solid;
+  border-width: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-color: #222B2E;
+  border-bottom-width: 0px; 
+  /*border-bottom-color: #E9E6EC;*/
+  background-color: #222B2E;
+  left: 0;
+  bottom: 0;
+  transition-duration: .8s;
+  transition-delay: .4s;
+}
+
+.chartheader {
+  position: absolute;
+  display:inline-block;
+  width: 30%;
+  border-radius: 5px;
+  padding: 10px;
+  transition: .4s;
+  /*transition-timing-function: ease-in;*/
+}
+
+#chartbutton {
+  transition: .4s;
+
+}
+
+#chart2 {
+  z-index: 998;
+}
+
+.button {
+  height: 180px;
+}
+
+
+.button > .chartheader {
+  border-width: 2px;
+  border-color: #222B2E; 
+  border-style: solid;
+  padding: 8px;
+  background-color: #F7CA18;
+  opacity: 0;
+}
+
+.button > #chartbutton {
+  z-index: 999;
+  opacity: 1;
+  margin-top: 50px;
+  cursor: pointer;
+
+}
+
+.button > .chartbarback > .chartbardesc, 
+.button > .chartbarback > .chartbardescinv {
+  opacity: 0;
+}
+
+.button > .chartbarback > #chart1-1.chartbarsolid,
+.button > .chartbarback > #chart1-2.chartbarsolid,
+.button > .chartbarback > #chart2-1.chartbarsolid,
+.button > .chartbarback > #chart2-2.chartbarsolid,
+.button > .chartbarback > #chart3-1.chartbarsolid,
+.button > .chartbarback > #chart3-2.chartbarsolid {
+  height: 0px;  
+  transition-duration: 0.5s;
+  transition-delay: .5s;
+  border-style: none;
+}
+
+/*#chart1, #chart2, #chart3 {
+  background-color: #F2EDCF;
+}
+*/
+#chart1-1 {
+  height: 0.05%;
+}
+
+#chart1-2 {
+  height: 80%;
+}
+
+#chart2-1 {
+  height: .8%;
+}
+
+#chart2-2 {
+  height: 70%;
+}
+
+#chart3-1 {
+  height: 60%;
+}
+
+#chart3-2 {
+  height: 3.5%;
+}
+
+#disclaimer {
+  opacity: 0;
+  transition: 1s;
+}
+
+#A-1 > div {
+  padding: 40px;
+}
+
+
+
+/*Background boxes*/
+
+.backgroundbox {  
+  margin-left: 252px;
+  position: absolute;
+  /*display: inline-block;*/
+/*  background-color: rgba(253, 90, 2, .2);
+*/  filter: blur(10px);
+  top: 500px;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+  /*background-image: linear-gradient(0deg, rgba(247, 202, 24, .2), rgba(247, 202, 24, .4));*/
+  /*box-shadow: 0 0px 10px rgba(253, 90, 2, .2);*/
+  background-color: #000;
+  opacity: .1;
+}
+
